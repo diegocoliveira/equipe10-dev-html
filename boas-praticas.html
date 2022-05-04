@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Fábio César" />
+    <meta name="description" content="Essa página contém informações sobre como decidimos nos organizar como equipe para estruturar o trabalho pelo Github." />
+    <title>Guia Git e Github - Boas Práticas</title>
+</head>
+<body>
+    <!-- Seção de menu de navegação para outras páginas -->
+    <section>
+        <nav style="border: 2px solid black; padding: 2px">
+            <!-- Não consta os links para essas páginas pois ainda não os possuo -->
+            <ul>
+                <li><a href="">Página Inicial</a></li>
+                <li><a href="">Guia Git e Github - Comandos Básicos</a></li>
+                <li>Guia Git e Github - Boas Práticas na Comunicação</li>
+                <li><a href="">Contatos</a></li>
+            </ul>
+        </nav>
+    </section>
+    <!-- Seção principal com o cabeçalho de título e um parágrafo introdutório -->
+    <main>
+        <header style="text-align:center">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="logotipo Github, um círculo preto com a silhueta de um gato no centro" style="height:300px;width:300px;" />
+            <h1>Guia Git e GitHub</h1>
+            <h2>Boas Práticas na Comunicação</h2>
+        </header>
+            <p>Nessa página, iremos comentar sobre a adoção de estratégias pelo grupo para estruturar o processo de comunicação e envios dentro do repositório remoto no GitHub.</p>
+    </main>
+    <!-- Seção do conteúdo da página, contendo um artigo e uma barra lateral de navegação para esse conteúdo -->
+    <section>
+        <aside>
+            <nav style="border: 2px solid black; padding: 2px">
+                <header style="text-align:center;">
+                    <b>Menu de Navegação</b>
+                </header>
+                <ul>
+                    <li><a href="#intro">Introdução</a></li>
+                    <li><a href="#naming">Nomenclatura</a></li>
+                    <li><a href="#command">Comandos</a></li>
+                    <li><a href="#pull">Pull Requests</a></li>
+                    <li><a href="#description">Descrição do Repositório</a></li>
+                    <li><a href="#coc">Código de Conduta</a></li>
+                    <li><a href="#ref">Referências</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <article>
+            <h3 id="intro">Introdução</h3>
+            <p>Uma comunicação efetiva busca sempre ser clara e concisa, ou seja, permite que toda a informação seja transmitida e que não aconteça de forma confusa. A fim de atingir esse objetivo, nosso grupo adotou algumas práticas para nomenclatura de branches e commits, bem como padronizou a forma como será realizada "pull requests" e "merge commits" no nosso repositório remoto de acordo com as regras do exercício do tira-dúvidas.</p>
+            <h3 id="naming">Nomenclatura</h3>
+            <p>Todas as nomenclaturas devem utilizar o <a href="https://www.theserverside.com/definition/Kebab-case" target="_blank">kebab-case</a>, escrevendo em letras minúsculas e com separações indicadas por hífen.</p>
+            <h4>Branches</h4>
+            <p>Acordado pelo grupo de conter a estrutura "primeiro-nome-do-criador/conteúdo".</p>
+            <h4>Commits</h4>
+            <p>Acordado pelo grupo de seguir o padrão definido pelo <a href="https://github.com/stone-payments/stoneco-best-practices/blob/master/gitStyleGuide/README.md" target="_blank">guia de estilo Git</a> do repositório <a href="https://github.com/stone-payments/stoneco-best-practices" target="_blank">"stoneco-best-practices"</a>.</p>
+            <h3 id="command">Comandos</h3>
+            <p>Decidimos seguir os comandos Git de acordo com os pontos estabelecidos nas <a href="https://alluring-beluga-3dd.notion.site/Projeto-site-HTML-git-Turing-f5636a96cbf9445fb53f810d88831fbf" target="_blank">regras do projeto</a> e fizemos escolhas sobre qual método trabalharíamos em relação a alguns pontos dessas regras:</p>
+            <ul>
+                <li>No ponto 3: reforçamos para evitar fazer commits na branch master local.</li>
+                <li>No ponto 4: decidimos sempre apagar as topic branchs.</li>
+                <li>No ponto 6: decidimos seguir o caminho da letra b, mas alterar para o caminho da letra c em caso de conflitos. Também decidimos tirar screenshots do git log sempre antes e após finalizar uma pull request.</li>
+            </ul>
+            <h3 id="pull">Pull Requests</h3>
+            <p>Todas as Pull Requests devem contar com um comentário breve porém descritivo das suas alterações.</p>
+            <h3 id="description">Descrição do Repositório</h3>
+            <p>Repositórios devem possuir uma descrição símples do seu objetivo. No caso do nosso repositório, essa descrição está localizada no arquivo README.md em sua pasta raiz.</p>
+            <h3 id="coc">Código de Conduta</h3>
+            <p>Todos os membros do grupo se comprometeram a seguir alguns valores em relação à forma como será realizado o trabalho e a comunicação durante a tarefa:</p>
+            <ul>
+                <li>sendo receptivo</li>
+                <li>sendo participativo</li>
+                <li>sendo respeitoso</li>
+                <li>sendo colaborativo</li>
+                <li>sendo comunicativo e pedindo ajuda</li>
+            </ul>
+            <p>Todos os membros do grupo condenam qualquer tipo de ato que incite discriminação, violência, segregação ou que possa causar constrangimento devido a comentários negativos direcionados a uma ou mais pessoas envolvidas ou não no projeto.</p>
+            <h3 id="ref">Referências</h3>
+            <p>Referências para a construção dessa página:</p>
+            <ul>
+                <li><a href="https://alluring-beluga-3dd.notion.site/Projeto-site-HTML-git-Turing-f5636a96cbf9445fb53f810d88831fbf" target="_blank">https://alluring-beluga-3dd.notion.site/Projeto-site-HTML-git-Turing-f5636a96cbf9445fb53f810d88831fbf</a></li>
+                <li><a href="https://www.theserverside.com/definition/Kebab-case" target="_blank">https://www.theserverside.com/definition/Kebab-case</a></li>
+                <li><a href="https://github.com/stone-payments/stoneco-best-practices" target="_blank">https://github.com/stone-payments/stoneco-best-practices</a></li>
+            </ul>
+        </article>
+    </section>
+    
+    
+</body>
+</html>
