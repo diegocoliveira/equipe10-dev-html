@@ -28,170 +28,157 @@
         </header>
         <!-- Seção Comandos Git e GitHub -->
         <section>
-            <ol class="custom-counter">
-                <li>
-                    <strong>Configurações iniciais do Git</strong>
-                </li>
-                <dd>
-                    <p>Baixando e instalando o Git:</p>
-                    <pre class="bash"><code>
-                        <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>
-                    </code></pre>
+            <h3>
+                Configurações iniciais do Git
+            </h3>
 
-                    <p>Exibe a versão do Git instalado:</p>
-                    <pre class="bash"><code>
-                        git --version
-                    </code></pre>
+            <dd>
+                <p>Baixando e instalando o Git:</p>
+                <pre class="bash"><code>
+                    <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>
+                </code></pre>
 
-                    <p>Configura nome de usuário:</p>
-                    <pre class="bash"><code>
-                        git config --global user.name nome-sobrenome
-                    </code></pre>
+                <p>Exibe a versão do Git instalado:</p>
+                <pre class="bash"><code>
+                    git --version
+                </code></pre>
 
-                    <p>Configura email de usuário:</p>
-                    <pre class="bash"><code>
-                        git config --global user.email email@email.com.br
-                    </code></pre>
-                </dd>
-                <hr />
+                <p>Configura nome de usuário:</p>
+                <pre class="bash"><code>
+                    git config --global user.name nome-sobrenome
+                </code></pre>
 
-                <li>
-                    <strong>Inicializando um repositório</strong>
-                </li>
-                <dd>
-                    <p>Inicializa o versionamento no respectivo diretório:</p>
-                    <pre class="bash"><code>
-                        git init
-                    </code></pre>
-                </dd>
-                <hr />
+                <p>Configura email de usuário:</p>
+                <pre class="bash"><code>
+                    git config --global user.email email@email.com.br
+                </code></pre>
+            </dd>
+        </section>
+        <hr />
 
-                <li>
-                    <strong>Comandos básicos</strong>
-                </li>
-                <dd>
-                    <p>Verifica o status do repositório:</p>
-                    <pre class="bash"><code>
-                        git status
-                    </code></pre>
+        <section>
+            <h3>Inicializando um repositório</h3>
+            <dd>
+                <p>Inicializa o versionamento no respectivo diretório:</p>
+                <pre class="bash"><code>
+                    git init
+                </code></pre>
+            </dd>
+        </section>
+        <hr />
 
-                    <p>Adiciona todos os arquivos para serem commitados:</p>
-                    <pre class="bash"><code>
-                        git add .
-                    </code></pre>
-                    
-                    <p>Commitando arquivos:</p>
-                    <pre class="bash"><code>
-                        git commit -m "escreva um comentário significativo"
-                    </code></pre>
+        <section>
+            <h3>Comandos básicos</h3>
+            <dd>
+                <p>Verifica o status do repositório:</p>
+                <pre class="bash"><code>
+                    git status
+                </code></pre>
 
-                    <p>Visualizando o relatório de commits:</p>
-                    <pre class="bash"><code>
-                        # Exibe todos os commits
-                        git log
+                <p>Adiciona todos os arquivos para serem commitados:</p>
+                <pre class="bash"><code>
+                    git add .
+                </code></pre>
+                
+                <p>Commitando arquivos:</p>
+                <pre class="bash"><code>
+                    git commit -m "escreva um comentário significativo"
+                </code></pre>
 
-                        # Exibe todos os commits em uma única linha de forma reduzida
-                        git log --oneline
+                <p>Visualizando o relatório de commits:</p>
+                <pre class="bash"><code>
+                    # Exibe todos os commits
+                    git log
 
-                        # Exibe todos os commits em linha e em um gráfico
-                        git log --oneline --graph
-                    </code></pre>
-                </dd><hr />
+                    # Exibe todos os commits em uma única linha de forma reduzida
+                    git log --oneline
 
-                <li>
-                    <strong>Criando um repositório no GitHub</strong>
-                </li>
-                <dd>
-                    <p>Adicionando repositório remoto:</p>
-                    <pre class="bash"<code>
-                        git remote add origin https://github.com/*username*/*repository*.git
-                    </code></pre>
-                </dd>
+                    # Exibe todos os commits em linha e em um gráfico
+                    git log --oneline --graph
+                </code></pre>
+            </dd>
+        </section>
+        <hr />
 
-                <dd>
-                    <p>Enviando as modificações para o repositório remoto:</p>
-                    <pre class="bash"><code>
-                        git push origin nome-da-branch
-                    </code></pre>
-                </dd><hr />
+        <section>
+            <h3>Criando um repositório no GitHub</h3>
+            <dd>
+                <p>Adicionando repositório remoto:</p>
+                <pre class="bash"><code>
+                    git remote add origin https://github.com/*username*/*repository*.git
+                </code></pre>
+            </dd>
 
-                <li>
-                    <strong>Trabalhando em equipe (branches)</strong>
-                </li>
-                <dd>
-                    <p>Criando e acessando para uma nova branch:</p>
-                    <pre class="bash"><code>
-                        git checkout -b nome-da-branch
-                    </code></pre>
-                </dd>
+            <dd>
+                <p>Enviando as modificações para o repositório remoto:</p>
+                <pre class="bash"><code>
+                    git push origin nome-da-branch
+                </code></pre>
+            </dd>
+        </section>
+        <hr />
 
-                <dd>
-                    <p>Acessando uma branch:</p>
-                    <pre class="bash"><code>
-                        git checkout nome-da-branch
-                    </code></pre>
-                </dd>
+        <section>
+            <h3>Trabalhando em equipe (branches)</h3>
+            <dd>
+                <p>Criando e acessando para uma nova branch:</p>
+                <pre class="bash"><code>
+                    git checkout -b nome-da-branch
+                </code></pre>
+            </dd>
 
-                <dd>
-                    <p>Visualizando todas as branches existentes no repositório:</p>
-                    <pre class="bash"><code>
-                        git branch
-                    </code></pre>
-                </dd>
+            <dd>
+                <p>Acessando uma branch:</p>
+                <pre class="bash"><code>
+                    git checkout nome-da-branch
+                </code></pre>
+            </dd>
 
-                <dd>
-                    <p>Aplicando merge em branches:</p>
-                    <pre class="bash"><code>
-                        # Precisa estar na branch de destino
-                        git merge nome-da-branch
-                    </code></pre>
-                </dd>
+            <dd>
+                <p>Visualizando todas as branches existentes no repositório:</p>
+                <pre class="bash"><code>
+                    git branch
+                </code></pre>
+            </dd>
 
-                <dd>
-                    <p>Deletando uma branch local:</p>
-                    <pre class="bash"><code>
-                        git branch -D nome-da-branch
-                    </code></pre>
-                </dd>
+            <dd>
+                <p>Aplicando merge em branches:</p>
+                <pre class="bash"><code>
+                    # Precisa estar na branch de destino
+                    git merge nome-da-branch
+                </code></pre>
+            </dd>
 
-                <dd>
-                    <p>Deletando uma branch remoto:</p>
-                    <pre class="bash"><code>
-                        git branch :nome-da-branch
-                    </code></pre>
-                </dd><hr />
+            <dd>
+                <p>Deletando uma branch local:</p>
+                <pre class="bash"><code>
+                    git branch -D nome-da-branch
+                </code></pre>
+            </dd>
 
-                <li>
-                    <strong>Clonando um repositório para a sua máquina</strong>
-                </li>
-                <dd>
-                    <p>Puxando o projeto para máquina:</p>
-                    <pre class="bash"><code>
-                        # Utilize o comando git clone informando a URL do repositório a ser clonado
-                        git clone https://github.com/*username*/*repository*.git
-                    </code></pre>
-                </dd>
-            </ol>
+            <dd>
+                <p>Deletando uma branch remoto:</p>
+                <pre class="bash"><code>
+                    git branch :nome-da-branch
+                </code></pre>
+            </dd>
+        </section>
+        <hr />
+
+        <section>
+            <h3>Clonando um repositório para a sua máquina</h3>
+            <dd>
+                <p>Puxando o projeto para máquina:</p>
+                <pre class="bash"><code>
+                    # Utilize o comando git clone informando a URL do repositório a ser clonado
+                    git clone https://github.com/*username*/*repository*.git
+                </code></pre>
+            </dd>
         </section>
 
         <footer>
-            <p>
-                <small>
-                    Criado e desenvolvido por 
-                    <a href="https://github.com/diegocoliveira" target="_blank">
-                        Diego Oliveira
-                    </a>,
-                    <a href="https://github.com/Fabio-Cesar" target="_blank">
-                        Fábio César
-                    </a>,
-                    <a href="https://github.com/isadoramg" target="_blank">
-                        Isadora Guerra
-                    </a> e
-                    <a href="https://github.com/janascher" target="_blank">
-                        Janaína Scher
-                    </a>, alunos da Alpha EdTech.
-                </small>
-            </p>
+            Eu sou <strong>Janaína Scher</strong> e modifiquei essa página no dia <strong>09/05/2022 19:45</strong>. Caso você tenha modificado essa página atualize com seu nome,data e hora. <br/>
+            <strong>Obs. Em caso de conflito sempre opte pela a modificação mais recente.</strong>
         </footer>
 
     </body>

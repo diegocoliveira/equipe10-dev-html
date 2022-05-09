@@ -20,26 +20,6 @@ section {
     margin-top: 50px;
 }
 
-.custom-counter {
-    list-style: none;
-}
-
-.custom-counter li {
-    counter-increment: step-counter;
-    margin-bottom: 10px;
-}
-
-.custom-counter li::before {
-    background-color: rgb(0,200,200);
-    border-radius: 3px;
-    color: white;
-    content: counter(step-counter);
-    font-size: 80%;
-    font-weight: bold;
-    margin-right: 5px;
-    padding: 3px 8px;
-}
-
 .bash {
     background-color: #F6F6F6;
     border-radius: 3px;
