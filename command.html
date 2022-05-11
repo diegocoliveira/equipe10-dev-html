@@ -1,185 +1,182 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Git e Github</title>
+<head>
+    <meta charset="UTF-8">
+    <title>Git e Github</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Menu de navegação para outras páginas -->
+    <nav style="border: 2px solid black; padding: 2px">
+        <table>
+            <tr>
+                <td><a href="./index.html">Página Inicial |</a></td>
+                <td><strong><a href="./command.html">Comandos Básicos |</a></strong></td>
+                <td><a href="./boas-praticas.html">Requisitos e boas Práticas na Comunicação |</a></td>
+                <td><a href="./equipe.html">Equipe</a></td>
+            </tr>
+        </table>
+    </nav>
+    <!-- Cabeçalho -->
+    <header>
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="logotipo Github, um círculo preto com a silhueta de um gato no centro" style="height:300px;width:300px;" />
+        <h1>Git e GitHub</h1>
+        <p>Um guia de comandos simplificado</p>
+    </header>
+    <!-- Seção Comandos Git e GitHub -->
+    <section>
+        <h3>
+            Configurações iniciais do Git
+        </h3>
 
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
-    <body>
-        <section>
-            <nav style="border: 2px solid black; padding: 2px">
-                <!-- Não consta os links para essas páginas pois ainda não os possuo -->
-                <table>
-                    <tr>
-                        <td><a href="./index.html">Página Inicial |</a></td>
-                        <td><strong><a href="./command.html">Comandos Básicos |</a></strong></td>
-                        <td><a href="./boas-praticas.html">Requisitos e boas Práticas na Comunicação |</a></td>
-                        <td><a href="./equipe.html">Equipe</a></td>
-                    </tr>
-                </table>
-            </nav>
-        </section>
-        <!-- Cabeçalho -->
-        <header>
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="logotipo Github, um círculo preto com a silhueta de um gato no centro" style="height:300px;width:300px;" />
-            <h1>Git e GitHub</h1>
-            <p>Um guia de comandos simplificado</p>
-        </header>
-        <!-- Seção Comandos Git e GitHub -->
-        <section>
-            <h3>
-                Configurações iniciais do Git
-            </h3>
+        <dd>
+            <p>Baixando e instalando o Git:</p>
+            <pre class="bash"><code>
+                <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>
+            </code></pre>
 
-            <dd>
-                <p>Baixando e instalando o Git:</p>
-                <pre class="bash"><code>
-                    <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>
-                </code></pre>
+            <p>Exibe a versão do Git instalado:</p>
+            <pre class="bash"><code>
+                git --version
+            </code></pre>
 
-                <p>Exibe a versão do Git instalado:</p>
-                <pre class="bash"><code>
-                    git --version
-                </code></pre>
+            <p>Configura nome de usuário:</p>
+            <pre class="bash"><code>
+                git config --global user.name nome-sobrenome
+            </code></pre>
 
-                <p>Configura nome de usuário:</p>
-                <pre class="bash"><code>
-                    git config --global user.name nome-sobrenome
-                </code></pre>
+            <p>Configura email de usuário:</p>
+            <pre class="bash"><code>
+                git config --global user.email email@email.com.br
+            </code></pre>
+        </dd>
+    </section>
+    <hr />
 
-                <p>Configura email de usuário:</p>
-                <pre class="bash"><code>
-                    git config --global user.email email@email.com.br
-                </code></pre>
-            </dd>
-        </section>
-        <hr />
+    <section>
+        <h3>Inicializando um repositório</h3>
+        <dd>
+            <p>Inicializa o versionamento no respectivo diretório:</p>
+            <pre class="bash"><code>
+                git init
+            </code></pre>
+        </dd>
+    </section>
+    <hr />
 
-        <section>
-            <h3>Inicializando um repositório</h3>
-            <dd>
-                <p>Inicializa o versionamento no respectivo diretório:</p>
-                <pre class="bash"><code>
-                    git init
-                </code></pre>
-            </dd>
-        </section>
-        <hr />
+    <section>
+        <h3>Comandos básicos</h3>
+        <dd>
+            <p>Verifica o status do repositório:</p>
+            <pre class="bash"><code>
+                git status
+            </code></pre>
 
-        <section>
-            <h3>Comandos básicos</h3>
-            <dd>
-                <p>Verifica o status do repositório:</p>
-                <pre class="bash"><code>
-                    git status
-                </code></pre>
+            <p>Adiciona todos os arquivos para serem commitados:</p>
+            <pre class="bash"><code>
+                git add .
+            </code></pre>
+            
+            <p>Commitando arquivos:</p>
+            <pre class="bash"><code>
+                git commit -m "escreva um comentário significativo"
+            </code></pre>
 
-                <p>Adiciona todos os arquivos para serem commitados:</p>
-                <pre class="bash"><code>
-                    git add .
-                </code></pre>
-                
-                <p>Commitando arquivos:</p>
-                <pre class="bash"><code>
-                    git commit -m "escreva um comentário significativo"
-                </code></pre>
+            <p>Visualizando o relatório de commits:</p>
+            <pre class="bash"><code>
+                # Exibe todos os commits
+                git log
 
-                <p>Visualizando o relatório de commits:</p>
-                <pre class="bash"><code>
-                    # Exibe todos os commits
-                    git log
+                # Exibe todos os commits em uma única linha de forma reduzida
+                git log --oneline
 
-                    # Exibe todos os commits em uma única linha de forma reduzida
-                    git log --oneline
+                # Exibe todos os commits em linha e em um gráfico
+                git log --oneline --graph
+            </code></pre>
+        </dd>
+    </section>
+    <hr />
 
-                    # Exibe todos os commits em linha e em um gráfico
-                    git log --oneline --graph
-                </code></pre>
-            </dd>
-        </section>
-        <hr />
+    <section>
+        <h3>Criando um repositório no GitHub</h3>
+        <dd>
+            <p>Adicionando repositório remoto:</p>
+            <pre class="bash"><code>
+                git remote add origin https://github.com/*username*/*repository*.git
+            </code></pre>
+        </dd>
 
-        <section>
-            <h3>Criando um repositório no GitHub</h3>
-            <dd>
-                <p>Adicionando repositório remoto:</p>
-                <pre class="bash"><code>
-                    git remote add origin https://github.com/*username*/*repository*.git
-                </code></pre>
-            </dd>
+        <dd>
+            <p>Enviando as modificações para o repositório remoto:</p>
+            <pre class="bash"><code>
+                git push origin nome-da-branch
+            </code></pre>
+        </dd>
+    </section>
+    <hr />
 
-            <dd>
-                <p>Enviando as modificações para o repositório remoto:</p>
-                <pre class="bash"><code>
-                    git push origin nome-da-branch
-                </code></pre>
-            </dd>
-        </section>
-        <hr />
+    <section>
+        <h3>Trabalhando em equipe (branches)</h3>
+        <dd>
+            <p>Criando e acessando para uma nova branch:</p>
+            <pre class="bash"><code>
+                git checkout -b nome-da-branch
+            </code></pre>
+        </dd>
 
-        <section>
-            <h3>Trabalhando em equipe (branches)</h3>
-            <dd>
-                <p>Criando e acessando para uma nova branch:</p>
-                <pre class="bash"><code>
-                    git checkout -b nome-da-branch
-                </code></pre>
-            </dd>
+        <dd>
+            <p>Acessando uma branch:</p>
+            <pre class="bash"><code>
+                git checkout nome-da-branch
+            </code></pre>
+        </dd>
 
-            <dd>
-                <p>Acessando uma branch:</p>
-                <pre class="bash"><code>
-                    git checkout nome-da-branch
-                </code></pre>
-            </dd>
+        <dd>
+            <p>Visualizando todas as branches existentes no repositório:</p>
+            <pre class="bash"><code>
+                git branch
+            </code></pre>
+        </dd>
 
-            <dd>
-                <p>Visualizando todas as branches existentes no repositório:</p>
-                <pre class="bash"><code>
-                    git branch
-                </code></pre>
-            </dd>
+        <dd>
+            <p>Aplicando merge em branches:</p>
+            <pre class="bash"><code>
+                # Precisa estar na branch de destino
+                git merge nome-da-branch
+            </code></pre>
+        </dd>
 
-            <dd>
-                <p>Aplicando merge em branches:</p>
-                <pre class="bash"><code>
-                    # Precisa estar na branch de destino
-                    git merge nome-da-branch
-                </code></pre>
-            </dd>
+        <dd>
+            <p>Deletando uma branch local:</p>
+            <pre class="bash"><code>
+                git branch -D nome-da-branch
+            </code></pre>
+        </dd>
 
-            <dd>
-                <p>Deletando uma branch local:</p>
-                <pre class="bash"><code>
-                    git branch -D nome-da-branch
-                </code></pre>
-            </dd>
+        <dd>
+            <p>Deletando uma branch remoto:</p>
+            <pre class="bash"><code>
+                git branch :nome-da-branch
+            </code></pre>
+        </dd>
+    </section>
+    <hr />
 
-            <dd>
-                <p>Deletando uma branch remoto:</p>
-                <pre class="bash"><code>
-                    git branch :nome-da-branch
-                </code></pre>
-            </dd>
-        </section>
-        <hr />
+    <section>
+        <h3>Clonando um repositório para a sua máquina</h3>
+        <dd>
+            <p>Puxando o projeto para máquina:</p>
+            <pre class="bash"><code>
+                # Utilize o comando git clone informando a URL do repositório a ser clonado
+                git clone https://github.com/*username*/*repository*.git
+            </code></pre>
+        </dd>
+    </section>
 
-        <section>
-            <h3>Clonando um repositório para a sua máquina</h3>
-            <dd>
-                <p>Puxando o projeto para máquina:</p>
-                <pre class="bash"><code>
-                    # Utilize o comando git clone informando a URL do repositório a ser clonado
-                    git clone https://github.com/*username*/*repository*.git
-                </code></pre>
-            </dd>
-        </section>
+    <footer>
+        Eu sou <strong>Fábio César</strong> e modifiquei essa página no dia <strong>11/05/2022 17:40</strong>. Caso você tenha modificado essa página atualize com seu nome,data e hora. <br/>
+        <strong>Obs. Em caso de conflito sempre opte pela modificação mais recente.</strong>
+    </footer>
 
-        <footer>
-            Eu sou <strong>Janaína Scher</strong> e modifiquei essa página no dia <strong>09/05/2022 19:45</strong>. Caso você tenha modificado essa página atualize com seu nome,data e hora. <br/>
-            <strong>Obs. Em caso de conflito sempre opte pela a modificação mais recente.</strong>
-        </footer>
-
-    </body>
+</body>
 </html>
