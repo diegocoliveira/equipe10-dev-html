@@ -9,7 +9,7 @@
 </head>
 
 <body>
-     <!-- Menu de navegação para outras páginas -->
+    <!-- Menu de navegação para outras páginas -->
     <nav style="border: 2px solid black; padding: 0px">
         <table>
             <tr>
@@ -70,7 +70,7 @@
             <pre class="bash"><code>
                 git add .
             </code></pre>
-            
+
             <p>Commitando arquivos:</p>
             <pre class="bash"><code>
                 git commit -m "escreva um comentário significativo"
@@ -203,12 +203,28 @@
             </code></pre>
         </dd>
     </section>
+    <hr />
+
+    <section>
+        <h3>Ignorar um arquivo comitado:</h3>
+        <dd>
+            <p>Arquivos que foram enviados erroneamente e que você deseja ignorar:</p>
+            <pre class="bash"><code>
+                    echo ".vscode" >> .gitignore
+                    git rm -r --cached "nome-do-arquivo"
+                    git add .gitignore
+                    git commit -m "mensagem"
+                    git push
+                </code></pre>
+        </dd>
+    </section>
 
     <footer>
-        Eu sou <strong>Diego Oliveira</strong> e modifiquei essa página no dia <strong>11/05/2022 23:21</strong>. Caso
+        Eu sou <strong>Isadora Guerra</strong> e modifiquei essa página no dia <strong>12/05/2022 16:08</strong>. Caso
         você tenha modificado essa página atualize com seu nome,data e hora. <br />
-        <strong>Obs. Em caso de conflito sempre opte pela modificação mais recente.</strong>
+        <strong>Obs. Em caso de conflito sempre opte pela a modificação mais recente.</strong>
     </footer>
 
 </body>
+
 </html>
