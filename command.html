@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <title>Git e Github</title>
+    <title>Guia Git e Github - Comando Básicos</title>
+
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <!-- Menu de navegação para outras páginas -->
-    <nav style="border: 2px solid black; padding: 2px">
+     <!-- Menu de navegação para outras páginas -->
+    <nav style="border: 2px solid black; padding: 0px">
         <table>
             <tr>
-                <td><a href="./index.html">Página Inicial |</a></td>
-                <td><strong><a href="./command.html">Comandos Básicos |</a></strong></td>
-                <td><a href="./boas-praticas.html">Requisitos e boas Práticas na Comunicação |</a></td>
+                <td><a href="https://github.com/diegocoliveira/equipe10-dev-html" target="_blank"><img
+                            src="./imagens/github.svg"
+                            alt="logotipo Github, um círculo preto com a silhueta de um gato no centro"
+                            style="height:30px;" /> </a></td>
+                <td>| <a href="./index.html">Página Inicial</a> | </td>
+                <td><strong><a href="./command.html">Comandos Básicos</a></strong> | </td>
+                <td><a href="./boas-praticas.html">Requisitos e boas Práticas na Comunicação</a> | </td>
                 <td><a href="./equipe.html">Equipe</a></td>
             </tr>
         </table>
     </nav>
     <!-- Cabeçalho -->
     <header>
-        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="logotipo Github, um círculo preto com a silhueta de um gato no centro" style="height:300px;width:300px;" />
-        <h1>Git e GitHub</h1>
-        <p>Um guia de comandos simplificado</p>
+        <h2>Um Guia de Comandos Simplificado</h2>
     </header>
     <!-- Seção Comandos Git e GitHub -->
     <section>
@@ -32,34 +37,23 @@
         <dd>
             <p>Baixando e instalando o Git:</p>
             <pre class="bash"><code>
-                <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>
-            </code></pre>
+                    <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>
+                </code></pre>
 
             <p>Exibe a versão do Git instalado:</p>
             <pre class="bash"><code>
-                git --version
-            </code></pre>
+                    git --version
+                </code></pre>
 
             <p>Configura nome de usuário:</p>
             <pre class="bash"><code>
-                git config --global user.name nome-sobrenome
-            </code></pre>
+                    git config --global user.name nome-sobrenome
+                </code></pre>
 
             <p>Configura email de usuário:</p>
             <pre class="bash"><code>
-                git config --global user.email email@email.com.br
-            </code></pre>
-        </dd>
-    </section>
-    <hr />
-
-    <section>
-        <h3>Inicializando um repositório</h3>
-        <dd>
-            <p>Inicializa o versionamento no respectivo diretório:</p>
-            <pre class="bash"><code>
-                git init
-            </code></pre>
+                    git config --global user.email email@email.com.br
+                </code></pre>
         </dd>
     </section>
     <hr />
@@ -89,6 +83,43 @@
 
                 # Exibe todos os commits em uma única linha de forma reduzida
                 git log --oneline
+            </code></pre>
+        </dd>
+    </section>
+    <hr />
+    <section>
+        <h3>Inicializando um repositório</h3>
+        <dd>
+            <p>Inicializa o versionamento no respectivo diretório:</p>
+            <pre class="bash"><code>
+                    git init
+                </code></pre>
+        </dd>
+    </section>
+    <hr />
+
+    <section>
+        <h3>Comandos básicos</h3>
+        <dd>
+            <p>Verifica o status do repositório:</p>
+            <pre class="bash"><code>
+                    git status
+                </code></pre>
+
+            <p>Adiciona todos os arquivos para serem commitados:</p>
+            <pre class="bash"><code>
+                    git add .
+                </code></pre>
+
+            <p>Commitando arquivos:</p>
+            <pre class="bash"><code>
+                    git commit -m "escreva um comentário significativo"
+                </code></pre>
+
+            <p>Visualizando o relatório de commits:</p>
+            <pre class="bash"><code>
+                    # Exibe todos os commits
+                    git log
 
                 # Exibe todos os commits em linha e em um gráfico
                 git log --oneline --graph
@@ -174,7 +205,8 @@
     </section>
 
     <footer>
-        Eu sou <strong>Fábio César</strong> e modifiquei essa página no dia <strong>11/05/2022 17:40</strong>. Caso você tenha modificado essa página atualize com seu nome,data e hora. <br/>
+        Eu sou <strong>Diego Oliveira</strong> e modifiquei essa página no dia <strong>11/05/2022 23:21</strong>. Caso
+        você tenha modificado essa página atualize com seu nome,data e hora. <br />
         <strong>Obs. Em caso de conflito sempre opte pela modificação mais recente.</strong>
     </footer>
 
