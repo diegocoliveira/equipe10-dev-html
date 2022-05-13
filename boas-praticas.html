@@ -59,20 +59,44 @@
             <p>Commits</p>
             <p>Acordado pelo grupo de seguir o padrão definido pelo <a href="https://github.com/stone-payments/stoneco-best-practices/blob/master/gitStyleGuide/README.md" target="_blank">guia de estilo Git</a> do repositório <a href="https://github.com/stone-payments/stoneco-best-practices" target="_blank">"stoneco-best-practices"</a>.</p>
         </section>
-        <section id="command">
-            <h3>Comandos</h3>
-            <p>Decidimos seguir os comandos Git de acordo com os pontos estabelecidos nas <a href="https://alluring-beluga-3dd.notion.site/Projeto-site-HTML-git-Turing-f5636a96cbf9445fb53f810d88831fbf" target="_blank">regras do projeto</a> e fizemos escolhas sobre qual método trabalharíamos em relação a alguns pontos dessas regras:</p>
+        <section>
+            <h3 id="command">Regras</h3>
+            <p>Para o projeto estamos seguindo todas as regras exigidas como requisitos de acordo como especificados
+                em
+                <a href="https://alluring-beluga-3dd.notion.site/Projeto-site-HTML-git-Turing-f5636a96cbf9445fb53f810d88831fbf"
+                    target="_blank">regras do projeto</a> e adotamos alguns pontos em consenso com a equipe. Dentre
+                todas regras destacamos as seguintes:
+            </p>
             <ul>
-                <li>No ponto 3: reforçamos para evitar fazer commits na branch master local.</li>
-                <li>No ponto 4: decidimos sempre apagar as topic branchs.</li>
-                <li>No ponto 6: decidimos seguir o caminho da letra b, mas alterar para o caminho da letra c em caso de
-                    conflitos. Também decidimos tirar screenshots do git log sempre antes e após finalizar uma pull
-                    request.</li>
+                <li>é proíbido realizar commits e push na branch main;</li>
+                <li>deve-se abrir uma Pull Request sempre que for integrar algum trabalho na branch main; </li>
+                <li>somente após todos os colaboradores revisarem a Pull Request que pode ser realizado o merge na
+                    origin/main;</li>
+                <li><em>todos os commits devem estar verificados/assinados (preferencialmente com chaves GPG) para
+                        que uma Pull Request seja aprovada;</em></li>
+                <li>após concluir uma Pull Request deve-se apagar a topic branch;</li>
+                <li><em>em caso de conflitos durante o merge deve-se colocar a Pull Request em draft, realizar
+                        rebase e resolver localmente;</em></li>
             </ul>
         </section>
-        <section id="pull">
-            <h3>Pull Requests</h3>
-            <p>Todas as Pull Requests devem contar com um comentário breve porém descritivo das suas alterações.</p>
+        <section>
+            <h3 id="pull">Pull Requests</h3>
+            <p>Ao abrir uma Pull Request deve ser as seguintes etapas:</p>
+            <ol>
+                <li>ir para branch <strong>main</strong>, realizar fetch e merge com a <strong>origin/main</strong>; </li>
+                <li>retornar a sua <strong>topic branch</strong> e realizar <strong>rebase main</strong>;</li>
+                *obs. resolver os conflitos caso exista.
+                <li>realizar o commit assinado;</li>
+                <li>fazer push com repositório remoto; </li>
+                <span style="color:red;">será que o push obrigatoriamente será forçado?</span>
+                <li>abrir a Pull Request;</li>
+                *obs. lembrar de marcar-se com autor e solicitar que os demais colaboradores sejam revisores.
+                <li>todos os revisores devem aprovar ou solicitar explicitamente quais correções devem ser feitas;</li>
+                <li>somente após todos as correções terem sido realizadas e todos os revisores terem aprovado que
+                    pode realizar o merge na main</li>
+                <strong>*obs. caso na hora de realizar o merge o gitHub acusar algum conflito a pull request deve ir
+                    para o estado de draft e retomar para o passo 1.</strong>
+            </ol>
         </section>
         <section id="description">
             <h3>Descrição do Repositório</h3>
@@ -102,12 +126,14 @@
                 <li><a href="https://github.com/stone-payments/stoneco-best-practices"
                         target="_blank">https://github.com/stone-payments/stoneco-best-practices</a></li>
             </ul>
-        </section>
-    </article>
+        </article>
+    </section>
     <footer>
-        Eu sou <strong>Fábio César</strong> e modifiquei essa página no dia <strong>11/05/2022 17:40</strong>. Caso você tenha modificado essa página atualize com seu nome,data e hora. <br/>
+        Eu sou <strong>Diego Oliveira</strong> e modifiquei essa página no dia <strong>12/05/2022 22:08</strong>. Caso
+        você tenha modificado essa página atualize com seu nome,data e hora. <br />
         <strong>Obs. Em caso de conflito sempre opte pela modificação mais recente.</strong>
     </footer>
+
 </body>
 
 </html>
